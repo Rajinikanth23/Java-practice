@@ -14,7 +14,7 @@ public class ExcelData {
 	@DataProvider(name="test")
 	public Object[][] print() throws IOException
 	{
-		File f=new File(System.getProperty("user.dir")+"\\src\\main\\resources\\login.xlsx");
+		File f=new File(System.getProperty("user.dir")+"\\src\\resources\\login.xlsx");
 		FileInputStream fs = new FileInputStream(f);
 		XSSFWorkbook wb=new XSSFWorkbook(fs);
 		XSSFSheet sheet=wb.getSheet("Sheet1");
